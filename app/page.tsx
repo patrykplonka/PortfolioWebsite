@@ -36,7 +36,7 @@ export default function Home() {
             className="space-y-1"
             >
               <h1 className="text-4xl font-bold bg-gradient-to-r 
-              from-blue-200 via-red-600 to-green-500 bg-clip-text 
+              from-blue-400 via-blue-600 to-blue-800 bg-clip-text 
               text-transparent inline-block">Patryk Płonka</h1>
               <p className="text-gray-600 dark:text-gray-400">IT Student</p>
               <p className="text-gray-600 dark:text-gray-400">Bielany, Poland</p>
@@ -47,14 +47,13 @@ export default function Home() {
             animate={{opacity: 1, x: 0}}
             transition={{duration: 0.6}}
             className='space-y-3'>
-            <h2 className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur
+            <h2 className="text-lg font-semibold">About Me
             </h2>
-            <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2x1">Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Dolorem inventore perspiciatis quisquam totam dolor, velit animi exercitationem dolores soluta, 
-              esse natus suscipit repellendus fugit, sit officiis! Placeat dolores non culpa.</p>
-              <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2x1">Lorem ipsum dolor sit amet consectetur adipisicing 
-              elit. Dolorem inventore perspiciatis quisquam totam dolor, velit animi exercitationem dolores soluta, 
-              esse natus suscipit repellendus fugit, sit officiis! Placeat dolores non culpa.</p>  
+            <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2x1">I am a third-year Computer Science student at the University of Bielsko-Biała. Currently,
+               I work as a Programming Instructor at Giganci Programowania, where I teach children and teenagers the fundamentals of programming.
+           </p>
+              <p className="text-gray-600 text-sm dark:text-gray-400 max-w-2x1">Aspiring Frontend Developer with a strong interest in React and Next.js.
+                 Motivated to learn and build modern, user-friendly web applications.</p>  
             </motion.div>
 
             <motion.div
@@ -63,11 +62,12 @@ export default function Home() {
             transition={{duration: 0.6}}
             className="flex items-center gap-3"
             >
-              <Button className="rounded-full bg-gradient-to-r bg-gradient-to-r 
-              from-blue-200 via-red-600 to-green-500
-              text-white transition-transform hover:scale-105">Resume</Button>
-
-              <Link href="https://github.com/patrykplonka" className='text-gray-600 dark:text-gray-400
+            <Link href="F:\Aplikacje\portfolio\public\resume.pdf" passHref>
+            <Button className="rounded-full bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 text-white transition-transform hover:scale-105">
+            Resume
+            </Button>
+            </Link>
+             <Link href="https://github.com/patrykplonka" className='text-gray-600 dark:text-gray-400
               hover:text-black dark:hover:text-white transition-colors'>
                 <FaGithub className="w-6 h-6"></FaGithub>
               </Link>
@@ -82,55 +82,71 @@ export default function Home() {
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.6}} 
-            className="space-y-8">           
+            className="space-y-6">           
             <h2 className='text-3xl font-semibold
-            bg-gradient-to-r from-blue-200 via-red-600
-             to-green-500 bg-clip-text 
+            bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800
+              bg-clip-text 
               text-transparent inline-block'>Experience</h2>
 
               <div className="space-y-2">
                 <div className='flex items-center justify-between'>
                   <div className="space-y-1">
-                    <p className='text-sm text-gray-600 dark:text-gray-400'>January 2024 - present</p>
+                    <p className='text-sm text-gray-600 dark:text-gray-400'>January 2024 - Present</p>
                     <p className='text-m'>Programming trainer</p>
                     <p className='text-blue-600 dark:text-blue-400'>Giganci Programowania</p>
                   </div>
-                  
                 </div>
                 <p className='text-gray-600 dark:text-gray-400 text-sm'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   Tempora, accusantium maiores inventore facilis sapiente,
-                    voluptates veritatis esse, odio aliquam nostrum dolor nemo
-                     ipsam recusandae dignissimos numquam doloribus earum obcaecati in!
+                Teaching children and teenagers the basics of programming.
                 </p>
-              </div>
+                </div>
+                <div className="space-y-2">
+                <div className='flex items-center justify-between'>
+                  <div className="space-y-1">
+                    <p className='text-sm text-gray-600 dark:text-gray-400'>July 2024 - September 2024</p>
+                    <p className='text-m'>IT internship</p>
+                    <p className='text-blue-600 dark:text-blue-400'>Polmotors</p>
+                  </div>
+                </div>
+                <p className='text-gray-600 dark:text-gray-400 text-sm'>
+                Helpdesk, workstation updates, peripheral device servicing, and updating network infrastructure diagrams.
+                </p>
+                </div>
 
             </motion.section>
 
             <motion.section
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.6}}             
+            transition={{duration: 0.6}} 
+            className="space-y-6"            
             >
             <h2 className='text-3xl font-semibold
-            bg-gradient-to-r from-blue-200 via-red-600
-             to-green-500 bg-clip-text 
+            bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text 
               text-transparent inline-block'>Education</h2>
             <div className="space-y-2">
               <div className='flex items-center justify-between'>
                 <div className='space-y-1'>
-                <p className='text-sm text-gray-600 dark:text-gray-400'>January 2024 - present</p>
-                    <p className='font-medium'>Programming trainer</p>
-                    <p className='text-blue-600 dark:text-blue-400'>Giganci Programowania</p>
+                <p className='text-sm text-gray-600 dark:text-gray-400'>October 2022 - Present</p>
+                    <p className='font-medium'>IT Engineer</p>
+                    <p className='text-blue-600 dark:text-blue-400'>University of Bielsko-Biala</p>
                 </div>
-
               </div>
-                              <p className='text-gray-600 dark:text-gray-400 text-sm'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   Tempora, accusantium maiores inventore facilis sapiente,
-                    voluptates veritatis esse, odio aliquam nostrum dolor nemo
-                     ipsam recusandae dignissimos numquam doloribus earum obcaecati in!
-                </p>
+                <p className='text-gray-600 dark:text-gray-400 text-sm'>
+                The Software Engineering specialization at UBB focuses on programming, databases, system architecture, and software testing. I gain hands-on experience with Agile, Scrum, and team projects, preparing me for a career in IT, especially in web and mobile development.
+                </p> 
+            </div>
+            <div className="space-y-2">
+              <div className='flex items-center justify-between'>
+                <div className='space-y-1'>
+                <p className='text-sm text-gray-600 dark:text-gray-400'>September 2018 - June 2022</p>
+                    <p className='font-medium'>IT Technician</p>
+                    <p className='text-blue-600 dark:text-blue-400'>University of Bielsko-Biala</p>
+                </div>
+              </div>
+                <p className='text-gray-600 dark:text-gray-400 text-sm'>
+                I graduated from a technical high school specializing in IT, where I gained practical knowledge in programming, hardware, and network management. I successfully passed my vocational exams and earned the title of IT Technician.
+                </p> 
             </div>
 
             </motion.section>
@@ -138,11 +154,10 @@ export default function Home() {
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.6}} 
-            className='space-y-8'            
+            className='space-y-6'            
             >
             <h2 className='text-3xl font-semibold
-            bg-gradient-to-r from-blue-200 via-red-600
-             to-green-500 bg-clip-text 
+            bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800 bg-clip-text 
               text-transparent inline-block'>Projects</h2>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
                 <Card className='bg-gray-50 dark:bg-zinc-900 border-gray-200
