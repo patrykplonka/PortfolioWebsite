@@ -67,12 +67,12 @@ export default function Home() {
               from-blue-200 via-red-600 to-green-500
               text-white transition-transform hover:scale-105">Resume</Button>
 
-              <Link href="#" className='text-gray-600 dark:text-gray-400
+              <Link href="https://github.com/patrykplonka" className='text-gray-600 dark:text-gray-400
               hover:text-black dark:hover:text-white transition-colors'>
                 <FaGithub className="w-6 h-6"></FaGithub>
               </Link>
 
-              <Link href="#" className='text-gray-600 dark:text-gray-400
+              <Link href="https://www.linkedin.com/in/patryk-p%C5%82onka-991174300/" className='text-gray-600 dark:text-gray-400
               hover:text-black dark:hover:text-white transition-colors'>
                 <FaLinkedin className="w-6 h-6"></FaLinkedin>
               </Link>
