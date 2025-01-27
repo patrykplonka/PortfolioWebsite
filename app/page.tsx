@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import pp from '../public/pp.png';
+import ZombieHunter from '../public/ZombieHuner.png';
 import ThemeToggle from '../components/ui/theme-toggle';
 import {Button} from '../components/ui/button';
 import {motion} from 'framer-motion';
@@ -17,9 +18,9 @@ export default function Home() {
           <motion.header
           initial={{opacity: 0, x: -100}}
           animate={{opacity: 1, x: 0}}
-          transition={{duration: 0.6}}
+          transition={{duration: 0.5}}
 
-          className="flex items-center justify-between mb-12">
+          className="flex items-center justify-between mb-10">
             <div className="w-20 h-20 rounded-full overflow-hidden">
               <Image src={pp} alt="profile picture" className="cursor-pointer transition-all 
               duration-300 hover:scale-110"></Image>
@@ -32,7 +33,7 @@ export default function Home() {
             <motion.div
             initial={{opacity: 0, x: 100}}
             animate={{opacity: 1, x: 0}}
-            transition={{duration: 0.6}}
+            transition={{duration: 0.5}}
             className="space-y-1"
             >
               <h1 className="text-4xl font-bold bg-gradient-to-r 
@@ -45,7 +46,7 @@ export default function Home() {
             <motion.div
             initial={{opacity: 0, x: -100}}
             animate={{opacity: 1, x: 0}}
-            transition={{duration: 0.6}}
+            transition={{duration: 0.5}}
             className='space-y-3'>
             <h2 className="text-lg font-semibold">About Me
             </h2>
@@ -59,7 +60,7 @@ export default function Home() {
             <motion.div
             initial={{opacity: 0, x: 50}}
             animate={{opacity: 1, x: 0}}
-            transition={{duration: 0.6}}
+            transition={{duration: 0.5}}
             className="flex items-center gap-3"
             >
             <Link href="F:\Aplikacje\portfolio\public\resume.pdf" passHref>
@@ -81,7 +82,7 @@ export default function Home() {
             <motion.section
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.6}} 
+            transition={{duration: 0.5}} 
             className="space-y-6">           
             <h2 className='text-3xl font-semibold
             bg-gradient-to-r from-blue-400 via-blue-600 to-blue-800
@@ -118,7 +119,7 @@ export default function Home() {
             <motion.section
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.6}} 
+            transition={{duration: 0.5}} 
             className="space-y-6"            
             >
             <h2 className='text-3xl font-semibold
@@ -141,7 +142,7 @@ export default function Home() {
                 <div className='space-y-1'>
                 <p className='text-sm text-gray-600 dark:text-gray-400'>September 2018 - June 2022</p>
                     <p className='font-medium'>IT Technician</p>
-                    <p className='text-blue-600 dark:text-blue-400'>University of Bielsko-Biala</p>
+                    <p className='text-blue-600 dark:text-blue-400'>Powiatowe Centrum Kształcenia Technicznego i Branżowego w Oświęcimiu</p>
                 </div>
               </div>
                 <p className='text-gray-600 dark:text-gray-400 text-sm'>
@@ -153,7 +154,7 @@ export default function Home() {
             <motion.section
             initial={{opacity: 0, y: 100}}
             animate={{opacity: 1, y: 0}}
-            transition={{duration: 0.6}} 
+            transition={{duration: 0.5}} 
             className='space-y-6'            
             >
             <h2 className='text-3xl font-semibold
@@ -165,12 +166,12 @@ export default function Home() {
                 cursor-pointer'>
 
                   <CardContent className='p-4'>
-                    <Image src={pp} alt="project 1" className='rounded-lg mb-4'></Image>
+                    <Image src={ZombieHunter} alt="project 1" className='rounded-lg mb-4'></Image>
                     <div className='flex items-center justify-between'>
 
                       <div>
-                        <h3 className='font-medium'>Project 1</h3>
-                        <p className='text-sm text-gray-600 dark:text-gray-400'>Next.js, MySQL</p>
+                        <h3 className='font-medium'>Zombie Hunter</h3>
+                        <p className='text-sm text-gray-600 dark:text-gray-400'>Unity, C#</p>
                       </div>
                       <Button variant="ghost" size="icon">→</Button>
                     </div>
