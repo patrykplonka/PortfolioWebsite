@@ -57,7 +57,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div
-            initial={{opacity: 0, x: -100}}
+            initial={{opacity: 0, x: 50}}
             animate={{opacity: 1, x: 0}}
             transition={{duration: 0.6}}
             className="flex items-center gap-3"
@@ -77,6 +77,33 @@ export default function Home() {
               </Link>
             </motion.div>
             </section>
+            <motion.section
+            initial={{opacity: 0, y: 100}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 0.6}} 
+            className="space-y-8">           
+            <h2 className='text-3xl font-semibold
+            bg-gradient-to-r from-blue-200 via-red-600
+             to-green-500 bg-clip-text 
+              text-transparent inline-block'>Experience</h2>
+
+              <div className="space-y-8">
+                <div className='flex items-center justify-between'>
+                  <div className="space-y-1">
+                    <p className='text-sm text-gray-6 dark:text-gray-400'>January 2024 - present</p>
+                    <p className='text-m'>Programming trainer</p>
+                    <p className='text-blue-600'>Giganci Programowania</p>
+                  </div>
+                </div>
+                <p className='text-gray-600 dark:text-gray-400 text-sm'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Tempora, accusantium maiores inventore facilis sapiente,
+                    voluptates veritatis esse, odio aliquam nostrum dolor nemo
+                     ipsam recusandae dignissimos numquam doloribus earum obcaecati in!
+                </p>
+              </div>
+
+            </motion.section>
             </main>
         </div>
     </div>
